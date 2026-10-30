@@ -1,0 +1,156 @@
+.contactPage {
+    padding: 40px 8% 20px;
+}
+
+.contactTitle {
+    text-align: center;
+    color: rgba(255, 166, 0, 0.631);
+    font-size: 2.6rem;
+    text-shadow: 2px 2px 5px white, 2px 2px 5px red;
+}
+
+.contactIntro {
+    max-width: 640px;
+    margin: 16px auto 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.contactWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Left: contact details */
+.contactInfo {
+    flex: 1 1 280px;
+    max-width: 380px;
+    padding: 25px;
+    border: 1px solid white;
+}
+
+.contactInfo h2 {
+    color: chocolate;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
+    list-style: none;
+}
+
+.contactInfo li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+.contactInfo li i {
+    width: 22px;
+    color: rgba(255, 166, 0, 0.647);
+    text-align: center;
+}
+
+.contactInfo a {
+    color: white;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contactInfo a:hover {
+    color: rgba(255, 166, 0, 0.821);
+}
+
+.socialIcons {
+    display: flex;
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.socialIcons a {
+    color: #d2691e;
+    font-size: 30px;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.socialIcons a:hover,
+.socialIcons a:focus-visible {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+/* Right: form */
+.contactForm {
+    flex: 1 1 340px;
+    max-width: 560px;
+    padding: 25px;
+    background-color: rgb(32, 32, 32);
+    border: 1px solid white;
+}
+
+.contactForm label {
+    display: block;
+    margin: 14px 0 6px;
+    color: rgb(180, 143, 95);
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contactForm textarea {
+    resize: vertical;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    outline: 2px solid orange;
+    border-color: orange;
+}
+
+.sendBtn {
+    margin-top: 22px;
+    width: 100%;
+    padding: 14px 10px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.sendBtn:hover,
+.sendBtn:focus-visible {
+    background-color: rgb(219, 143, 0);
+    border-radius: 20px 0px;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .contactPage {
+        padding: 30px 5% 10px;
+    }
+
+    .contactTitle {
+        font-size: 2.1rem;
+    }
+
+    .contactInfo,
+    .contactForm {
+        max-width: 100%;
+    }
+
+}

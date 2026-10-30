@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Abhijeet Shingde</title>
+    <link rel="icon" href="./assets.png">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./contact me.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <nav class="mainNavbar">
+        <div class="leftNav">
+            <img src="./assets/user.jpeg" alt="" class="logo">
+            <span class="name111">ABHIJEET SHINGDE</span>
+        </div>
+        <ul class="rightNav">
+    <li class="navList"><a href="./portfolio.html" class="navItem"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li class="navList"><a href="./projects.html" class="navItem">Projects</a></li>
+    <li class="navList"><a href="./about me.html" class="navItem">About Me</a></li>
+    <li class="navList"><a href="./contact me.html" class="navItem activePage">Contact Me</a></li>
+</ul>
+    </nav>
+
+    <section class="contactPage">
+        <h1 class="contactTitle">Contact Me</h1>
+        <p class="contactIntro">
+            I am open to fresher roles in software development, data analysis and business analysis.
+            Send me a message and I will reply as soon as I can.
+        </p>
+
+        <div class="contactWrap">
+            <!-- Contact details: replace the placeholder values with your own -->
+            <div class="contactInfo">
+                <h2>Get in touch</h2>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:abhijeetshingde71@gmail.com">abhijeetshingde71@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+91 7588527005">+91 8767334281</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Pune, Maharashtra, India</span>
+                    </li>
+                </ul>
+
+                <div class="socialIcons">
+                    <a href="https://www.linkedin.com/in/abhijeet-shingde" target="_blank" rel="noopener"
+                        title="LinkedIn" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/AbhijeetShingde" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"></a>
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact form: replace YOUR_FORM_ID with your Formspree form ID (see formspree.io) -->
+            <form class="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Job opportunity, project, question">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here"
+                    required></textarea>
+
+                <button type="submit" class="sendBtn">Send message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <i class="fa-solid fa-copyright"></i>
+        Copyright Abhijeet Shingde
+    </footer>
+</body>
+
+</html>
