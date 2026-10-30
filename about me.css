@@ -1,0 +1,183 @@
+.aboutHero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 8%;
+}
+
+.aboutPhoto img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid orange;
+}
+
+.aboutIntro {
+    max-width: 620px;
+}
+
+.aboutIntro h1 {
+    color: orange;
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px white, 2px 2px 5px red;
+}
+
+.aboutIntro p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.aboutIntro strong {
+    color: orange;
+}
+
+.aboutBtn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 14px 32px;
+    background-color: orange;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.aboutBtn:hover,
+.aboutBtn:focus-visible {
+    background-color: rgb(219, 143, 0);
+    border-radius: 20px 0px;
+}
+
+/* Sections */
+.aboutSection {
+    padding: 40px 8%;
+}
+
+.altBg {
+    background-color: rgb(32, 32, 32);
+}
+
+.aboutHeading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+/* Timeline */
+.timeline {
+    max-width: 760px;
+    margin: 0 auto;
+    border-left: 3px solid orange;
+    padding-left: 25px;
+}
+
+.timelineItem {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timelineItem::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.timelineItem h3 {
+    color: orange;
+    font-size: 1.3rem;
+}
+
+.timelineMeta {
+    display: block;
+    color: rgb(180, 143, 95);
+    margin: 4px 0 8px;
+}
+
+.timelineItem p {
+    line-height: 1.7;
+}
+
+/* Skills */
+.skillGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skillBox {
+    width: 260px;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.skillBox h3 {
+    color: chocolate;
+    margin-bottom: 12px;
+}
+
+.skillBox ul {
+    list-style: none;
+}
+
+.skillBox li {
+    padding: 6px 0;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+/* Certifications */
+.certList {
+    list-style: none;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.certList li {
+    padding: 12px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+.certList i {
+    color: rgb(182, 157, 111);
+    margin-right: 10px;
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 800px) {
+    .aboutHero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 6%;
+    }
+
+    .aboutPhoto img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .aboutIntro h1 {
+        font-size: 2.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutSection {
+        padding: 30px 5%;
+    }
+
+    .skillBox {
+        width: 100%;
+    }
+}
